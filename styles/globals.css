@@ -1,0 +1,23 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --ink: #0a0d14; --ink2: #111520; --ink3: #181d2e;
+  --surface: #1c2235; --rim: #242c42; --rim2: #2d3854;
+  --mist: #e8eaf0; --mist2: #9ba3bc; --mist3: #4a5570;
+  --cyan: #38e8d8; --violet: #7c6ef0; --jade: #38d898;
+  --rose: #f04060; --gold: #f0c060;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: var(--ink);
+  color: var(--mist);
+  min-height: 100vh;
+  direction: rtl;
+  overflow-x: hidden;
+}
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes orbFloat { 0%,100%{transform:translate(0,0)} 33%{transform:translate(30px,-20px)} 66%{transform:translate(-20px,15px)} }
+@keyframes progAnim { 0%{width:0;margin-left:0} 50%{width:60%;margin-left:20%} 100%{width:0;margin-left:100%} }
